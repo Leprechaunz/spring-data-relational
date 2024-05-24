@@ -8,4 +8,4 @@ export JENKINS_USER=${JENKINS_USER_NAME}
 export GRADLE_ENTERPRISE_ACCESS_KEY=${DEVELOCITY_ACCESS_KEY}
 
 MAVEN_OPTS="-Duser.name=${JENKINS_USER} -Duser.home=/tmp/jenkins-home" \
-  ./mvnw -s settings.xml clean install -Pall-dbs
+  ./mvnw -s settings.xml clean install -Ppostgres
